@@ -143,10 +143,48 @@
     display:grid;
     list-style-type:none;
     grid-template-columns: repeat(4, auto);
+    margin: auto;
     margin-top: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .product-grid-list {
+    width: 85%;
+    margin: auto;
+    margin-top: 0;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    text-align: center;
+}
 
+.product-grid-list img {
+    width: 85%;
+    padding: 10px;
+}
+.product-grid-list .price {
+    color: lawngreen;
+    padding-left: 20px;
+    text-align: left;
+}
+.product-grid-list .name {
+    padding-left: 20px;
+    text-align: left;
+}
+.product-grid-list .product-button {
+    display:grid;
+    list-style-type:none;
+    grid-template-columns: repeat(3, auto);
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 85%;
+}
+
+.product-button a {
+    width: 70%;
+    margin: auto;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
 }
