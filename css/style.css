@@ -1,5 +1,11 @@
 body {
     color: rgba(30, 30, 30, 0.81);
+    height:100%;
+}
+
+#body {
+    position:relative;
+    min-height: 100%;
 }
 
 a {
@@ -222,6 +228,14 @@ a:hover, a:active, a:focus {
     text-align: center;
 }
 
+.button {
+    margin: auto;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-align: center;
+}
+
 .bookmark-button {
     color:#2EEC71;
 }
@@ -260,6 +274,32 @@ a:hover, a:active, a:focus {
     color: white;
 }
 
+.button-solid-green-elipse {
+    /*ubah warna background*/
+    background-color:#2EEC71;
+    /*ubah warna teks*/
+    color: white;
+    /*menghilangkan border*/
+    border: 2px #2EEC71 solid;
+    /*atur sudut border*/
+    border-radius: 25px;
+    /*efek bayangan*/
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
+    /*teks rata tengah*/
+    text-align: center;
+    /*ubah jarak padding/dalam*/
+    padding: 10px 15px;
+    /*ubah tampilan kursor ketika berada diatas elemen*/
+    cursor: pointer;
+}
+
+.button-solid-green-elipse:hover{
+    /*ubah warna background ketika kursor berada diatas elemen*/
+    background-color: rgba(46, 236, 113, 0.8);
+    border: 2px rgba(46, 236, 113, 0.8) solid;
+    color: white;
+}
+
 .button-border-green {
     /*ubah warna background*/
     background-color: white;
@@ -280,6 +320,32 @@ a:hover, a:active, a:focus {
 }
 
 .button-border-green:hover{
+    /*ubah warna background ketika kursor berada diatas elemen*/
+    background-color:#2EEC71;
+    color: white;
+}
+
+.button-border-green-elipse {
+    /*ubah warna background*/
+    background-color: white;
+    /*ubah warna teks*/
+    color:#2EEC71;
+    /*menghilangkan border*/
+    border: 2px #2EEC71 solid;
+    /*atur sudut border*/
+    border-radius: 25px;
+    /*efek bayangan*/
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
+    /*teks rata tengah*/
+    text-align: center;
+    /*ubah jarak padding/dalam*/
+    padding: 10px 25px 10px;
+    /*ubah tampilan kursor ketika berada diatas elemen*/
+    cursor: pointer;
+    margin: 20px;
+}
+
+.button-border-green-elipse:hover{
     /*ubah warna background ketika kursor berada diatas elemen*/
     background-color:#2EEC71;
     color: white;
@@ -317,4 +383,50 @@ a:hover, a:active, a:focus {
     color: rgba(30, 30, 30, 0.81);
     font-weight: normal;
     font-size: smaller;
+}
+
+.footer-product-detail {
+    display: grid;
+    grid-template-columns: 10% auto auto;
+    bottom: 0;
+    width: 80%;
+    position: fixed;
+    height:70px;
+    line-height:50px;
+    background: white;
+    /*color:#fff;*/
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: -7px;
+    padding: 10px;
+    /*border*/
+    border-top: 2px rgba(30, 30, 30, 0.81) solid;
+    border-left: 2px rgba(30, 30, 30, 0.81) solid;
+    border-right: 2px rgba(30, 30, 30, 0.81) solid;
+    /*atur sudut border*/
+    border-radius: 10px;
+}
+
+.footer-product-detail-1 {
+    grid-column: 1;
+    padding-top: 10px;
+    margin: auto;
+}
+
+.footer-product-detail-2 {
+    grid-column: 2;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: left;
+}
+.footer-product-detail-2 p, h2 {
+    margin: 0;
+    line-height: 25px;
+}
+.footer-product-detail-3 {
+    grid-column: 3;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 20px;
+    text-align: right;
 }
