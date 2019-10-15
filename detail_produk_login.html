@@ -10,12 +10,12 @@
 <div id="body">
     <div class="menu">
         <ul class="menu-content">
-            <li class="item-menu-1"><a href="index.html"><img src="img/Fresh%20Fruits.png" class="logo"></a></li>
+            <li class="item-menu-1"><a href="index_login.html"><img src="img/Fresh%20Fruits.png" class="logo"></a></li>
             <li class="item-menu-2"><input class="form-cari" type="text" placeholder="Cari ..."></li>
-            <li class="item-menu-3"><a class="button-icon" href="keranjang.html"><i class="fa fa-shopping-cart fa-2x"></i></a></li>
+            <li class="item-menu-3"><a class="button-icon" href="keranjang_login.html"><i class="fa fa-shopping-cart fa-2x"></i></a></li>
             <li class="item-menu-4"><a href="#"><div class="garis-vertikal"></div></a></li>
-            <li class="item-menu-5"><a href="login.html" class="button-solid-green">Masuk</a></li>
-            <li class="item-menu-6"><a href="daftar.html" class="button-border-green">Daftar</a></li>
+            <li class="item-menu-5"><a class="button-border-green"><i class="fa fa-user"></i> Della</a></li>
+            <li class="item-menu-6"><a href="#" onclick="logout()" class="button-solid-green">Keluar</a></li>
         </ul>
     </div>
 
@@ -50,11 +50,19 @@
             <div class="footer-product-detail-3">
                 <a href="#" class="button button-icon"><i class="far fa-comment"></i></a>
                 <a href="#" class="button-border-green-elipse">Beli</a>
-                <a href="keranjang.html" class="button-solid-green-elipse">Tambah Ke Keranjang</a>
+                <a href="keranjang_login.html" class="button-solid-green-elipse">Tambah Ke Keranjang</a>
             </div>
         </div>
     </div>
 
 </div>
 </body>
+<script type="text/javascript">
+    function logout() {
+        url = 'login.html';
+        if (confirm("Yakin ingin keluar ?")) {
+            window.location = "login.html";
+        }
+    }
+</script>
 </html>

@@ -8,6 +8,58 @@ body {
     min-height: 100%;
 }
 
+.login-background {
+    background: url('../img/4.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#body-login {
+    margin: auto;
+    position:relative;
+    width: 40%;
+    min-height: 100%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.login-box {
+    border: 2px solid rgba(0, 0, 0, 0.55);
+    border-radius: 20px;
+    text-align: left;
+    min-height: 40%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.button-login {
+    /*ubah warna background*/
+    background-color:#2EEC71;
+    /*ubah warna teks*/
+    color: white;
+    /*menghilangkan border*/
+    border: 2px #2EEC71 solid;
+    /*atur sudut border*/
+    border-radius: 5px;
+    /*efek bayangan*/
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
+    /*teks rata tengah*/
+    text-align: center;
+    /*ubah jarak padding/dalam*/
+    padding: 10px 45%;
+    /*ubah tampilan kursor ketika berada diatas elemen*/
+    cursor: pointer;
+}
+
+.button-solid-green:hover{
+    /*ubah warna background ketika kursor berada diatas elemen*/
+    background-color: rgba(46, 236, 113, 0.8);
+    border: 2px rgba(46, 236, 113, 0.8) solid;
+    color: white;
+}
+
 a {
     text-decoration: none;
     text-decoration-color: rgba(30, 30, 30, 0.8);
@@ -230,7 +282,7 @@ a:hover, a:active, a:focus {
 
 .button {
     margin: auto;
-    border: 2px solid #000000;
+    border: 2px solid rgba(30, 30, 30, 0.8);
     border-radius: 5px;
     padding: 10px 15px;
     text-align: center;
@@ -387,7 +439,7 @@ a:hover, a:active, a:focus {
 
 .footer-product-detail {
     display: grid;
-    grid-template-columns: 10% auto auto;
+    grid-template-columns: 10% 45% 45%;
     bottom: 0;
     width: 80%;
     position: fixed;
@@ -428,5 +480,60 @@ a:hover, a:active, a:focus {
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 20px;
+    text-align: right;
+}
+
+.cart {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    padding-top: 20px;
+    /*grid-template-columns: repeat(6, auto);*/
+    /*grid-template-rows: repeat(2, auto);*/
+}
+
+.cart-shop {
+    display:grid;
+    list-style-type:none;
+    margin:0;
+    padding: 20px 20px 20px 0;
+    grid-template-columns: 5% 7% 35% auto;
+    border-bottom: 2px rgba(30, 30, 30, 0.81) solid;
+}
+
+.store-name {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.store-name p, h2 {
+    margin: 0;
+    line-height: 25px;
+}
+
+.cart-list {
+    display:grid;
+    list-style-type:none;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    grid-template-columns: 5% 15% 40% 35%;
+    box-shadow: 0.5px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.cart-desc {
+    font-size: large;
+}
+.cart-desc p {
+    color: #2EEC71;
+}
+
+.img-cart {
+    width: 150px;
+    height: 150px;
+}
+
+.button-list {
+    margin: auto;
+    margin-right: 10px;
     text-align: right;
 }

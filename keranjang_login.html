@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FRESH FRUITS</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css"/>
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>-->
+</head>
+<body>
+<div id="body">
+    <div class="menu">
+        <ul class="menu-content">
+            <li class="item-menu-1"><a href="index_login.html"><img src="img/Fresh%20Fruits.png" class="logo"></a></li>
+            <li class="item-menu-2"><input class="form-cari" type="text" placeholder="Cari ..."></li>
+            <li class="item-menu-3"><a class="button-icon" href="keranjang_login.html"><i class="fa fa-shopping-cart fa-2x"></i></a></li>
+            <li class="item-menu-4"><a href="#"><div class="garis-vertikal"></div></a></li>
+            <li class="item-menu-5"><a class="button-border-green"><i class="fa fa-user"></i> Della</a></li>
+            <li class="item-menu-6"><a href="#" onclick="logout()" class="button-solid-green">Keluar</a></li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="content">
+        <div class="content-title">
+            <h1 class="content-title-1">Keranjang Belanja</h1>
+        </div>
+
+<!--        Baris Keranjang Pertama-->
+        <div class="cart">
+            <div class="cart-shop">
+                <input id="check-store" type="checkbox" class="button">
+                <i class="fa fa-store fa-3x"></i>
+                <div class="store-name">
+                    <label for="check-store"><h2>Juragan_Buah</h2></label>
+                    <p>Jember</p>
+                </div>
+            </div>
+
+            <div class="cart-list">
+                <input id="check-produk" type="checkbox" class="button">
+                <img class="img-cart" src="img/apel.png">
+                <div class="cart-desc">
+                    <h3>Apel Fuji RRT</h3>
+                    <p>Rp. 38.000,00</p>
+                </div>
+                <div class="button-list">
+                    <a class="button"><i class="fa fa-heart"></i></a>
+                    <a class="button"><i class="fa fa-trash"></i></a>
+                    <select class="button">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="cart-list">
+                <input id="check-produk" type="checkbox" class="button">
+                <img class="img-cart" src="img/pir.jpg">
+                <div class="cart-desc">
+                    <h3>Pir Madu</h3>
+                    <p>Rp. 30.000,00</p>
+                </div>
+                <div class="button-list">
+                    <a class="button"><i class="fa fa-heart"></i></a>
+                    <a class="button"><i class="fa fa-trash"></i></a>
+                    <select class="button">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-product-detail">
+            <div class="footer-product-detail-1">
+                <i class="fa fa-money-bill-alt fa-3x"></i>
+            </div>
+            <div class="footer-product-detail-2">
+                <h2>Total Belanja :</h2>
+                <p style="color: coral"><strong>Rp. 68.000,00</strong></p>
+            </div>
+            <div class="footer-product-detail-3">
+                <a href="#" class="button button-icon"><i class="fa fa-receipt"></i> Pakai Kupon</a>
+                <a href="#" class="button-solid-green" onclick="beli()">Beli (2)</a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</body>
+<script type="text/javascript">
+    function logout() {
+        if (confirm("Yakin ingin keluar ?")) {
+            window.location = "login.html";
+        }
+    }
+
+    function beli() {
+        alert("Terimakasih sudah bertransaksi ! :)");
+        window.location = "login.html";
+    }
+</script>
+</html>

@@ -10,12 +10,12 @@
 <div id="body">
     <div class="menu">
         <ul class="menu-content">
-            <li class="item-menu-1"><a href="index.html"><img src="img/Fresh%20Fruits.png" class="logo"></a></li>
+            <li class="item-menu-1"><a href="index_login.html"><img src="img/Fresh%20Fruits.png" class="logo"></a></li>
             <li class="item-menu-2"><input class="form-cari" type="text" placeholder="Cari ..."></li>
-            <li class="item-menu-3"><a class="button-icon" href="keranjang.html"><i class="fa fa-shopping-cart fa-2x"></i></a></li>
+            <li class="item-menu-3"><a class="button-icon" href="keranjang_login.html"><i class="fa fa-shopping-cart fa-2x"></i></a></li>
             <li class="item-menu-4"><a href="#"><div class="garis-vertikal"></div></a></li>
-            <li class="item-menu-5"><a href="login.html" class="button-solid-green">Masuk</a></li>
-            <li class="item-menu-6"><a href="daftar.html" class="button-border-green">Daftar</a></li>
+            <li class="item-menu-5"><a class="button-border-green"><i class="fa fa-user"></i> Della</a></li>
+            <li class="item-menu-6"><a href="#" onclick="logout()" class="button-solid-green">Keluar</a></li>
         </ul>
     </div>
 
@@ -36,7 +36,7 @@
     <div class="content">
         <div class="content-title">
             <h2 class="content-title-1">Daftar Produk</h2>
-            <a class="content-title-2" href="daftar_produk.html">Lihat Semua</a>
+            <a class="content-title-2" href="daftar_produk_login.html">Lihat Semua</a>
         </div>
 
         <div class="product-grid">
@@ -46,12 +46,12 @@
                 </div>
                 <div class="product-description">
                     <h2 class="price">Rp. 38.000,00</h2>
-                    <a href="detail_produk.html"><h3 class="name">Apel Fuji RRT / 1000gr</h3></a>
+                    <a href="detail_produk_login.html"><h3 class="name">Apel Fuji RRT / 1000gr</h3></a>
                 </div>
                 <div class="product-button">
                     <a href="#" class="bookmark-button"><i class="fa fa-bookmark"></i></a>
                     <a href="#" class="like-button"><i class="fa fa-heart"></i></a>
-                    <a href="keranjang.html" class="button-icon"><i class="fa fa-cart-plus"></i></a>
+                    <a href="keranjang_login.html" class="button-icon"><i class="fa fa-cart-plus"></i></a>
                 </div>
             </div>
             <div class="product-grid-list">
@@ -60,12 +60,12 @@
                 </div>
                 <div class="product-description">
                     <h2 class="price">Rp. 36.000,00</h2>
-                    <a href="detail_produk.html"><h3 class="name">Jeruk Florida / 1000gr</h3></a>
+                    <a href="detail_produk_login.html"><h3 class="name">Jeruk Florida / 1000gr</h3></a>
                 </div>
                 <div class="product-button">
                     <a href="#" class="bookmark-button"><i class="fa fa-bookmark"></i></a>
                     <a href="#" class="like-button"><i class="fa fa-heart"></i></a>
-                    <a href="keranjang.html" class="button-icon"><i class="fa fa-cart-plus"></i></a>
+                    <a href="keranjang_login.html" class="button-icon"><i class="fa fa-cart-plus"></i></a>
                 </div>
             </div>
             <div class="product-grid-list">
@@ -74,12 +74,12 @@
                 </div>
                 <div class="product-description">
                     <h2 class="price">Rp. 18.000,00</h2>
-                    <a href="detail_produk.html"><h3 class="name">Mangga / 1000gr</h3></a>
+                    <a href="detail_produk_login.html"><h3 class="name">Mangga / 1000gr</h3></a>
                 </div>
                 <div class="product-button">
                     <a href="#" class="bookmark-button"><i class="fa fa-bookmark"></i></a>
                     <a href="#" class="like-button"><i class="fa fa-heart"></i></a>
-                    <a href="keranjang.html" class="button-icon"><i class="fa fa-cart-plus"></i></a>
+                    <a href="keranjang_login.html" class="button-icon"><i class="fa fa-cart-plus"></i></a>
                 </div>
             </div>
             <div class="product-grid-list">
@@ -88,12 +88,12 @@
                 </div>
                 <div class="product-description">
                     <h2 class="price">Rp. 30.000,00</h2>
-                    <a href="detail_produk.html"><h3 class="name">Pir Madu / 1000gr</h3></a>
+                    <a href="detail_produk_login.html"><h3 class="name">Pir Madu / 1000gr</h3></a>
                 </div>
                 <div class="product-button">
                     <a href="#" class="bookmark-button"><i class="fa fa-bookmark"></i></a>
                     <a href="#" class="like-button"><i class="fa fa-heart"></i></a>
-                    <a href="keranjang.html" class="button-icon"><i class="fa fa-cart-plus"></i></a>
+                    <a href="keranjang_login.html" class="button-icon"><i class="fa fa-cart-plus"></i></a>
                 </div>
             </div>
 
@@ -102,4 +102,12 @@
 
 </div>
 </body>
+<script type="text/javascript">
+    function logout() {
+        url = 'login.html';
+        if (confirm("Yakin ingin keluar ?")) {
+            window.location = "login.html";
+        }
+    }
+</script>
 </html>
