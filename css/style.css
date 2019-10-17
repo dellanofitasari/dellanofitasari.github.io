@@ -411,6 +411,7 @@ a:hover, a:active, a:focus {
     /*grid-template-columns: repeat(6, auto);*/
     /*grid-template-rows: repeat(2, auto);*/
     grid-template-columns: 40% 60%;
+    margin-bottom: 15%;
 }
 
 .detail-product-grid-1 {
@@ -488,6 +489,7 @@ a:hover, a:active, a:focus {
     margin:0;
     padding:0;
     padding-top: 20px;
+    margin-bottom: 15%;
     /*grid-template-columns: repeat(6, auto);*/
     /*grid-template-rows: repeat(2, auto);*/
 }
@@ -536,4 +538,580 @@ a:hover, a:active, a:focus {
     margin: auto;
     margin-right: 10px;
     text-align: right;
+}
+
+.form-body {
+    margin: auto;
+    padding: 10px;
+    width: 90%;
+}
+
+.form-group {
+    margin: 10px;
+}
+
+
+/*pengaturan untuk ukuran mobile 720x1280*/
+@media screen and (max-width: 720px) {
+
+    body {
+        color: rgba(30, 30, 30, 0.81);
+        width: 720px;
+        height: auto;
+    }
+
+    #body {
+        position:relative;
+        min-height: 100%;
+        width: 98%;
+    }
+
+    .login-background {
+        background: url('../img/4.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #body-login {
+        margin: auto;
+        position:relative;
+        width: 40%;
+        min-height: 100%;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .login-box {
+        border: 2px solid rgba(0, 0, 0, 0.55);
+        border-radius: 20px;
+        text-align: left;
+        min-height: 40%;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.9);
+    }
+
+    .button-login {
+        /*ubah warna background*/
+        background-color:#2EEC71;
+        /*ubah warna teks*/
+        color: white;
+        /*menghilangkan border*/
+        border: 2px #2EEC71 solid;
+        /*atur sudut border*/
+        border-radius: 5px;
+        /*efek bayangan*/
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
+        /*teks rata tengah*/
+        text-align: center;
+        /*ubah jarak padding/dalam*/
+        padding: 10px 40%;
+        /*ubah tampilan kursor ketika berada diatas elemen*/
+        cursor: pointer;
+    }
+
+    .button-login:hover{
+        /*ubah warna background ketika kursor berada diatas elemen*/
+        background-color: rgba(46, 236, 113, 0.8);
+        border: 2px rgba(46, 236, 113, 0.8) solid;
+        color: white;
+    }
+
+    a {
+        text-decoration: none;
+        text-decoration-color: rgba(30, 30, 30, 0.8);
+    }
+
+    a:visited {
+        text-decoration: none;
+        text-decoration-color: rgba(30, 30, 30, 0.8);
+    }
+
+    a:hover, a:active, a:focus {
+        color:#2EEC71;
+    }
+
+    /*bagian header*/
+    .wrap .header{
+        background:#2EEC71;
+        /*height: 50px;*/
+        padding: 2px 10px;
+    }
+
+    /*akhir header*/
+
+    /*bagian menu*/
+    .menu{
+        background: none;
+        width: 100%;
+    }
+
+    .logo {
+        padding-top: 5px;
+        width: 80%;
+    }
+
+    .menu ul{
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+        background: White;
+        overflow: hidden;
+    }
+
+    .menu ul li{
+        float: left;
+        list-style-type: none;
+        padding-left: 0;
+        padding-right: 0;
+        top: 50%;
+        left: 50%;
+    }
+
+    .menu .menu-content{
+        display:grid;
+        list-style-type:none;
+        margin:0;
+        padding:0;
+        grid-template-columns: 20% 50% auto 1% auto auto;
+    }
+
+    .item-menu-1 {
+        margin: auto;
+        margin-left: 20px;
+        grid-column: 1;
+    }
+    .item-menu-2 {
+        grid-column: 2;
+        margin: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .item-menu-3 {
+        grid-column: 3;
+        margin: auto;
+    }
+    .item-menu-4 {
+        grid-column: 4;
+        margin: auto;
+    }
+    .item-menu-5 {
+        grid-column: 5;
+        margin: auto;
+    }
+    .item-menu-6 {
+        grid-column: 6;
+        margin: auto;
+    }
+
+    .form-cari {
+        width: 95%;
+        height: 20px;
+        margin: auto;
+    }
+
+    .garis-vertikal {
+        border-right: 1px black solid;
+        height: 25px;
+    }
+
+    .banner{
+        margin: auto;
+        padding: 20px;
+        width: 75%;
+    }
+
+    .banner img{
+        width: 100%;
+    }
+
+    .saldo {
+        margin: auto;
+        padding: 5px;
+        width: 70%;
+        border: 2px solid #000000;
+        border-radius: 15px;
+        font-size: 40px;
+    }
+    .saldo ul{
+        display:grid;
+        list-style-type:none;
+        grid-template-columns: 49% 1% 49%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-inline-start: 5px;
+
+    }
+
+    .saldo li{
+        font-size: x-large;
+        margin: auto;
+        padding-left: 0;
+    }
+
+    .content {
+        margin: auto;
+        padding: 10px;
+        width: 80%;
+    }
+
+    .content-title {
+        display:grid;
+        list-style-type:none;
+        grid-template-columns: 50% 50%;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+
+    .content-title-1 {
+        grid-column: 1;
+        text-align: left;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .content-title-2 {
+        grid-column: 2;
+        text-align: right;
+        margin-top: auto;
+        margin-bottom: auto;
+        color: #2EEC71;
+    }
+
+    .product-grid {
+        display:grid;
+        list-style-type:none;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(8, auto);
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .product-grid-list {
+        width: 85%;
+        margin: auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border: 2px solid #000000;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .product-grid-list .product-img{
+        width: 90%;
+        min-height: 175px;
+        padding: auto;
+        margin: auto;
+    }
+    .product-img img{
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .product-grid-list .price {
+        color: #2EEC71;
+        padding-left: 20px;
+        text-align: left;
+    }
+    .product-grid-list .name {
+        padding-left: 20px;
+        text-align: left;
+    }
+    .product-grid-list .product-button {
+        display:grid;
+        list-style-type:none;
+        grid-template-columns: repeat(3, auto);
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 85%;
+    }
+
+    .product-button a {
+        width: 70%;
+        margin: auto;
+        border: 2px solid #000000;
+        border-radius: 5px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .button {
+        margin: auto;
+        border: 2px solid rgba(30, 30, 30, 0.8);
+        border-radius: 5px;
+        padding: 5px 10px;
+        text-align: center;
+    }
+
+    .bookmark-button {
+        color:#2EEC71;
+    }
+
+    .like-button {
+        color: red;
+    }
+
+    .button-icon {
+        color: rgba(30, 30, 30, 0.8);
+        font-size: smaller;
+    }
+
+    .button-solid-green {
+        /*ubah warna background*/
+        background-color:#2EEC71;
+        /*ubah warna teks*/
+        color: white;
+        /*menghilangkan border*/
+        border: 2px #2EEC71 solid;
+        /*atur sudut border*/
+        border-radius: 5px;
+        /*efek bayangan*/
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
+        /*teks rata tengah*/
+        text-align: center;
+        /*ubah jarak padding/dalam*/
+        padding: 5px 10px;
+        /*ubah tampilan kursor ketika berada diatas elemen*/
+        cursor: pointer;
+    }
+
+    .button-solid-green:hover{
+        /*ubah warna background ketika kursor berada diatas elemen*/
+        background-color: rgba(46, 236, 113, 0.8);
+        border: 2px rgba(46, 236, 113, 0.8) solid;
+        color: white;
+    }
+
+    .button-solid-green-elipse {
+        /*ubah warna background*/
+        background-color:#2EEC71;
+        /*ubah warna teks*/
+        color: white;
+        /*menghilangkan border*/
+        border: 2px #2EEC71 solid;
+        /*atur sudut border*/
+        border-radius: 25px;
+        /*efek bayangan*/
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
+        /*teks rata tengah*/
+        text-align: center;
+        /*ubah jarak padding/dalam*/
+        padding: 5px 10px;
+        /*ubah tampilan kursor ketika berada diatas elemen*/
+        cursor: pointer;
+    }
+
+    .button-solid-green-elipse:hover{
+        /*ubah warna background ketika kursor berada diatas elemen*/
+        background-color: rgba(46, 236, 113, 0.8);
+        border: 2px rgba(46, 236, 113, 0.8) solid;
+        color: white;
+    }
+
+    .button-border-green {
+        /*ubah warna background*/
+        background-color: white;
+        /*ubah warna teks*/
+        color:#2EEC71;
+        /*menghilangkan border*/
+        border: 2px #2EEC71 solid;
+        /*atur sudut border*/
+        border-radius: 5px;
+        /*efek bayangan*/
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
+        /*teks rata tengah*/
+        text-align: center;
+        /*ubah jarak padding/dalam*/
+        padding: 5px 10px;
+        /*ubah tampilan kursor ketika berada diatas elemen*/
+        cursor: pointer;
+    }
+
+    .button-border-green:hover{
+        /*ubah warna background ketika kursor berada diatas elemen*/
+        background-color:#2EEC71;
+        color: white;
+    }
+
+    .button-border-green-elipse {
+        /*ubah warna background*/
+        background-color: white;
+        /*ubah warna teks*/
+        color:#2EEC71;
+        /*menghilangkan border*/
+        border: 2px #2EEC71 solid;
+        /*atur sudut border*/
+        border-radius: 25px;
+        /*efek bayangan*/
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
+        /*teks rata tengah*/
+        text-align: center;
+        /*ubah jarak padding/dalam*/
+        padding: 5px 10px;
+        /*ubah tampilan kursor ketika berada diatas elemen*/
+        cursor: pointer;
+        margin: 20px;
+    }
+
+    .button-border-green-elipse:hover{
+        /*ubah warna background ketika kursor berada diatas elemen*/
+        background-color:#2EEC71;
+        color: white;
+    }
+
+    .detail-product {
+        display:grid;
+        list-style-type:none;
+        margin:0;
+        padding:0;
+        /*grid-template-columns: repeat(6, auto);*/
+        /*grid-template-rows: repeat(2, auto);*/
+        grid-template-columns: 40% 60%;
+        font-size: smaller;
+    }
+
+    .detail-product-grid-1 {
+        grid-column: 1;
+        margin: auto;
+    }
+
+    .detail-product-grid-1 img {
+        width: 90%;
+    }
+
+    .detail-product-grid-2 {
+        grid-column: 2;
+        margin: 10px;
+    }
+
+    .font-price {
+        color: #2EEC71;
+    }
+
+    .font-price .font-price-sub-text {
+        color: rgba(30, 30, 30, 0.81);
+        font-weight: normal;
+        font-size: smaller;
+    }
+
+    .footer-product-detail {
+        display: grid;
+        grid-template-columns: 10% auto auto;
+        bottom: 0;
+        width: 80%;
+        position: fixed;
+        height:70px;
+        line-height:50px;
+        background: white;
+        /*color:#fff;*/
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: -7px;
+        padding: 10px;
+        /*border*/
+        border-top: 2px rgba(30, 30, 30, 0.81) solid;
+        border-left: 2px rgba(30, 30, 30, 0.81) solid;
+        border-right: 2px rgba(30, 30, 30, 0.81) solid;
+        /*atur sudut border*/
+        border-radius: 10px;
+        font-size: smaller;
+    }
+
+    .footer-product-detail-1 {
+        grid-column: 1;
+        padding-top: 10px;
+        margin: auto;
+    }
+
+    .footer-product-detail-2 {
+        grid-column: 2;
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: left;
+    }
+    .footer-product-detail-2 p, h2 {
+        margin: 0;
+        line-height: 25px;
+    }
+    .footer-product-detail-3 {
+        grid-column: 3;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 10px;
+        text-align: right;
+    }
+
+    .cart {
+        list-style-type:none;
+        margin:0;
+        padding:0;
+        padding-top: 20px;
+        margin-bottom: 15%;
+        /*grid-template-columns: repeat(6, auto);*/
+        /*grid-template-rows: repeat(2, auto);*/
+    }
+
+    .cart-shop {
+        display:grid;
+        list-style-type:none;
+        margin:0;
+        padding: 20px 20px 20px 0;
+        grid-template-columns: 5% 15% 35% auto;
+        border-bottom: 2px rgba(30, 30, 30, 0.81) solid;
+    }
+
+    .cart-shop i {
+        margin: auto;
+    }
+
+    .store-name {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .store-name p, h2 {
+        margin: 0;
+        line-height: 25px;
+    }
+
+    .cart-list {
+        display:grid;
+        list-style-type:none;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        grid-template-columns: 5% auto auto 35%;
+        box-shadow: 0.5px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .cart-desc {
+        font-size: large;
+    }
+    .cart-desc p {
+        color: #2EEC71;
+    }
+
+    .img-cart {
+        width: 150px;
+        height: 150px;
+    }
+
+    .button-list {
+        margin: auto;
+        margin-right: 10px;
+        text-align: right;
+    }
+
+    .form-body {
+        margin: auto;
+        padding: 10px;
+        width: 90%;
+    }
+
+    .form-group {
+        margin: 10px;
+    }
 }
