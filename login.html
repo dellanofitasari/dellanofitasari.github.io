@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>FRESH FRUITS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="css/fontawesome/css/all.min.css"/>
     <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>-->
@@ -21,7 +22,7 @@
 
         <br><br><br>
         <div style="text-align: center">
-            <a href="index_login.html" class="button-login">Login</a>
+            <a href="#" onclick="cek_validasi()" class="button-login">Login</a>
         </div>
 
         <br><br>
@@ -32,4 +33,18 @@
     </div>
 </div>
 </body>
+<script type="text/javascript">
+    function cek_validasi() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if (username=="" || password==""){
+            alert("Mohon isi dengan benar !")
+        }
+        else {
+            alert("Berhasil Masuk !")
+            window.location = "index_login.html";
+        }
+    }
+</script>
 </html>
