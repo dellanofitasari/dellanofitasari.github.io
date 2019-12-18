@@ -32,19 +32,44 @@
         </div>
     </div>
 </div>
+
+<!--Tampilan pop up-->
+<div class="popup-wrapper" id="popup">
+    <div class="popup-container">
+        <!--Wadah untuk menampilkan judul pop up-->
+        <h2 id="alert"></h2>
+        <!--Wadah untuk menampilkan isi pop up-->
+        <p id="isi-alert"></p>
+        <a class="popup-close" href="#closed">X</a>
+    </div>
+</div>
+
 </body>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript">
     function cek_validasi() {
         var username = document.getElementById("username").value;
         var password = document.getElementById("password").value;
 
-        if (username=="" || password==""){
-            alert("Mohon isi dengan benar !")
-        }
-        else {
-            alert("Berhasil Masuk !")
-            window.location = "index_login.html";
-        }
+        $.ajax({
+            type	: 'POST',
+            url 	: 'cek_login.php',
+            data 	: {
+                'username':username,
+                'password':password
+            },
+            success	: function(data){ //proses ajax berjalan sukses
+                //ubah hasil return data menjadi array
+                data = JSON.parse(data);
+                //set judul pop up
+                $('#alert').html(data.alert);
+                //set isi pop up
+                $('#isi-alert').html(data.isi_alert);
+                //tampilkan pop up
+                location.href = '#popup';
+
+            }
+        });
     }
 </script>
 </html>
