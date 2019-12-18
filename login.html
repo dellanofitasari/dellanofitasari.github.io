@@ -34,7 +34,7 @@
 </div>
 
 <!--Tampilan pop up-->
-<div class="popup-wrapper" id="popup">
+<div class="popup-wrapper" id="popup" style="display: none">
     <div class="popup-container">
         <!--Wadah untuk menampilkan judul pop up-->
         <h2 id="alert"></h2>
@@ -66,8 +66,13 @@
                 //set isi pop up
                 $('#isi-alert').html(data.isi_alert);
                 //tampilkan pop up
+                $('#popup').show();
                 location.href = '#popup';
 
+                // cek jika sukses maka masuk ke index_login.html
+                if (data.alert == "Sukses !") {
+                    location.href = 'index_login.html';
+                }
             }
         });
     }
